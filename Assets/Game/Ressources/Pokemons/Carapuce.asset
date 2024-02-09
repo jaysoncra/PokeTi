@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7a2aaeacd6746e47a2ae4cecc6c6a86, type: 3}
+  m_Name: Carapuce
+  m_EditorClassIdentifier: 
+  name: Carapuce
+  description: "Il se r\xE9fugie dans sa carapace pour se prot\xE9ger et r\xE9plique
+    en projetant de l'eau sur ses ennemis d\xE8s que ces derniers baissent leur garde."
+  frontSprite: {fileID: 21300000, guid: e20dac0c101605b4bbb74afa6f6dcac0, type: 3}
+  backSprite: {fileID: 21300000, guid: c46a19d5e9953e04a93e4fda9b600363, type: 3}
+  type1: 4
+  type2: 4
+  maxHp: 44
+  attack: 48
+  defense: 65
+  spAttack: 50
+  spDefense: 64
+  speed: 43

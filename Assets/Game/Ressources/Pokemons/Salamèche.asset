@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7a2aaeacd6746e47a2ae4cecc6c6a86, type: 3}
+  m_Name: "Salam\xE8che"
+  m_EditorClassIdentifier: 
+  name: "Salam\xE8che"
+  description: "La flamme au bout de sa queue symbolise sa vitalit\xE9. Elle br\xFBle
+    intens\xE9ment quand il est en bonne sant\xE9."
+  frontSprite: {fileID: 21300000, guid: 01300c5d0e1aae849b0415faa2f5a58c, type: 3}
+  backSprite: {fileID: 21300000, guid: cb64b494fdfa1c646aee3af9357c1b10, type: 3}
+  type1: 7
+  type2: 0
+  maxHp: 39
+  attack: 52
+  defense: 42
+  spAttack: 60
+  spDefense: 50
+  speed: 65
+  learnableMoves:
+  - moveBase: {fileID: 11400000, guid: b84a6b2c49d97d940bff0dc878e2c707, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: ebf9eae7d66735047a997a4e44cecfe9, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: 8733cddb8218fa14ca86654a75c5943f, type: 2}
+    level: 4
+  - moveBase: {fileID: 11400000, guid: 8c013f036980ba84a8d43d58096dcfa7, type: 2}
+    level: 8

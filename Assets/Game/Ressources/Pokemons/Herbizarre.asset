@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7a2aaeacd6746e47a2ae4cecc6c6a86, type: 3}
+  m_Name: Herbizarre
+  m_EditorClassIdentifier: 
+  name: Herbizarre
+  description: "Lorsque le bourgeon sur son dos gonfle, il d\xE9gage un doux parfum
+    : c'est le signe que sa grande fleur va bient\xF4t \xE9clore."
+  frontSprite: {fileID: 21300000, guid: 9c70dfd63786fbc46a0f4a75f34378bf, type: 3}
+  backSprite: {fileID: 21300000, guid: 2e92ec1672ff3f044846c88a100e92e7, type: 3}
+  type1: 11
+  type2: 12
+  maxHp: 60
+  attack: 62
+  defense: 63
+  spAttack: 80
+  spDefense: 80
+  speed: 60
+  learnableMoves:
+  - moveBase: {fileID: 11400000, guid: 615ddb69fdb47c04c84397c1d223ba25, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: 08146439840c43047a2fc14145184822, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: 9edb6d1a32d08f745a021efd3d71de0c, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: ebf9eae7d66735047a997a4e44cecfe9, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: c387ff01b6645d7449220f2b2e4911f1, type: 2}
+    level: 9
+  - moveBase: {fileID: 11400000, guid: 603dfb964a2e1c34eaf24d460de2d959, type: 2}
+    level: 12
+  - moveBase: {fileID: 11400000, guid: e43378fd97195884eb7217681a57a3ff, type: 2}
+    level: 15
+  - moveBase: {fileID: 11400000, guid: d8f212057ec8b404abe37181fd071b0b, type: 2}
+    level: 15
+  - moveBase: {fileID: 11400000, guid: 11aa1274dfdff614dab9ed2faae1614d, type: 2}
+    level: 20
+  - moveBase: {fileID: 11400000, guid: ddb5456b8520dd047a8d42ab92079d30, type: 2}
+    level: 25
+  - moveBase: {fileID: 11400000, guid: 449dea432e80ac440a883e444760308b, type: 2}
+    level: 30
+  - moveBase: {fileID: 11400000, guid: d4ae5537d5536844b8775fe3028e4a24, type: 2}
+    level: 35
+  - moveBase: {fileID: 11400000, guid: f7805682d65e01143b626bf73704eeda, type: 2}
+    level: 40
+  - moveBase: {fileID: 11400000, guid: 1bb137af70a26424b9f999615f6e6f23, type: 2}
+    level: 45
+  - moveBase: {fileID: 11400000, guid: 096913f53abb82041a2f3395620d9f1a, type: 2}
+    level: 50
