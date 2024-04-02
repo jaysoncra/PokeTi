@@ -186,7 +186,7 @@ public class BattleSystem : MonoBehaviour
             }
             else if (currentAction == 2) //Pokemon
             {
-                OpenPartyScreen();
+                //OpenPartyScreen();
             }
             else if (currentAction == 3) //Fuite
             {
