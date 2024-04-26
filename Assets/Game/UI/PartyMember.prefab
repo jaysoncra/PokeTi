@@ -38,8 +38,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 5.199997, y: -20.6}
-  m_SizeDelta: {x: -62, y: 18}
+  m_AnchoredPosition: {x: -20.250002, y: -20.6}
+  m_SizeDelta: {x: -11.100004, y: 18}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8277306653552623320
 CanvasRenderer:
@@ -181,7 +181,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2879086862050346265}
   - component: {fileID: 2466009856036700317}
-  - component: {fileID: 776887416497744688}
+  - component: {fileID: 7704599028316070015}
   m_Layer: 0
   m_Name: PartyMember
   m_TagString: Untagged
@@ -219,7 +219,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3298531427737972354}
   m_CullTransparentMesh: 1
---- !u!114 &776887416497744688
+--- !u!114 &7704599028316070015
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -228,12 +228,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 3298531427737972354}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 18341203a8d2d9f4e9bdba81339d0b42, type: 3}
+  m_Script: {fileID: 11500000, guid: d09ff87d61a8b26469ddcffcf5f32f03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   nameText: {fileID: 5238832457134988378}
   levelText: {fileID: 4702282658615144050}
   hpBar: {fileID: 2478654981120201976}
+  highlightedColor: {r: 0.24313726, g: 0.5529412, b: 0.9843137, a: 1}
 --- !u!1 &4272608677420434622
 GameObject:
   m_ObjectHideFlags: 0
