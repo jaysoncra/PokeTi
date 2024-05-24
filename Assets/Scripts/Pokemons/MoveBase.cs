@@ -15,7 +15,9 @@ public class MoveBase : ScriptableObject
     [SerializeField] int power; //Dégat de l'attaque
     [SerializeField] int accuracy; //Précision de l'attaque
     [SerializeField] int pp; //Nombre de fois que l'attaque peut être utilisée
-    [SerializeField] bool isSpecial; //Attaque special ou physique
+    [SerializeField] MoveCategory category; //Categorie de l'attaque
+    [SerializeField] MoveEffects effects; //Effet de l'attaque
+    [SerializeField] MoveTarget target; //Cible de l'attaque
 
     public string Name
     { 
@@ -47,8 +49,52 @@ public class MoveBase : ScriptableObject
         get { return pp; }
     }
 
-    public bool IsSpecial
+    public MoveCategory Category
     {
-        get { return isSpecial; }
+        get { return category; }
     }
+
+    public MoveEffects Effects
+    {
+        get { return effects; }
+    }
+
+    public MoveTarget Target
+    {
+        get { return target; }
+    }
+}
+
+[System.Serializable]
+public class MoveEffects
+{
+    [SerializeField] List<StatBoost> boosts;
+    [SerializeField] ConditionID status;
+
+    public List<StatBoost> Boosts
+    {
+        get { return boosts; }
+    }
+
+    public ConditionID Status
+    {
+        get { return status; }
+    }
+}
+
+[System.Serializable]
+public class StatBoost
+{
+    public Stat stat;
+    public int boost;
+}
+
+public enum MoveCategory
+{
+    Physical, Special, Status
+}
+
+public enum MoveTarget
+{
+    Foe, Self
 }

@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7a2aaeacd6746e47a2ae4cecc6c6a86, type: 3}
+  m_Name: Munja
+  m_EditorClassIdentifier: 
+  name: Munja
+  description: "Ce Pok\xE9mon est n\xE9 d'un esprit qui a \xE9lu domicile dans une
+    mue d'insecte. On dit qu'il vole l'\xE2me de quiconque regarde par la fente dans
+    son dos."
+  frontSprite: {fileID: 21300000, guid: a4a8e5f72be681d4aa77912533dfb423, type: 3}
+  backSprite: {fileID: 21300000, guid: 5fc73373fa33b1042aa509144802f450, type: 3}
+  type1: 9
+  type2: 16
+  maxHp: 1
+  attack: 90
+  defense: 45
+  spAttack: 30
+  spDefense: 30
+  speed: 40
+  learnableMoves: []

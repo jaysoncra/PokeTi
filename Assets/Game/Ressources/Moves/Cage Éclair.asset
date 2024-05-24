@@ -10,21 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8466cc1c96ae7244485ae56998b5ddf3, type: 3}
-  m_Name: Abri
+  m_Name: "Cage \xC9clair"
   m_EditorClassIdentifier: 
-  name: Abri
-  description: "Le lanceur se prot\xE8ge de toutes les attaques. Peut \xE9chouer
-    si utilis\xE9e plusieurs fois de suite."
-  type: 10
+  name: "Cage \xC9claire"
+  description: "Un faible choc \xE9lectrique paralyse la cible."
+  type: 5
   power: 0
-  accuracy: 0
-  pp: 10
-  category: 0
+  accuracy: 90
+  pp: 20
+  category: 2
   effects:
-    boosts:
-    - stat: 0
-      boost: 10
-    - stat: 1
-      boost: 10
-    status: 0
+    boosts: []
+    status: 4
   target: 0
