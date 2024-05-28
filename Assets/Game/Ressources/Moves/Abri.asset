@@ -19,4 +19,12 @@ MonoBehaviour:
   power: 0
   accuracy: 0
   pp: 10
-  isSpecial: 0
+  category: 0
+  effects:
+    boosts:
+    - stat: 0
+      boost: 10
+    - stat: 1
+      boost: 10
+    status: 0
+  target: 0

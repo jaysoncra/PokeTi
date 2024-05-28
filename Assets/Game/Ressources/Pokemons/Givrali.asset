@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7a2aaeacd6746e47a2ae4cecc6c6a86, type: 3}
+  m_Name: Givrali
+  m_EditorClassIdentifier: 
+  name: Givrali
+  description: "Lorsqu'il g\xE8le sa fourrure, ses poils se dressent comme des piquants
+    ac\xE9r\xE9s. C'est un moyen pour lui de se prot\xE9ger des ennemis."
+  frontSprite: {fileID: 21300000, guid: b2f8d3b5889b6284096e744fb255e223, type: 3}
+  backSprite: {fileID: 21300000, guid: 89f2cef60bc70f847bce0aaf8827233a, type: 3}
+  type1: 8
+  type2: 0
+  maxHp: 65
+  attack: 60
+  defense: 110
+  spAttack: 130
+  spDefense: 95
+  speed: 65
+  learnableMoves: []

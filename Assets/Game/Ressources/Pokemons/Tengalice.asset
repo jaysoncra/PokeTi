@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7a2aaeacd6746e47a2ae4cecc6c6a86, type: 3}
+  m_Name: Tengalice
+  m_EditorClassIdentifier: 
+  name: Tengalice
+  description: "D'un coup de ses \xE9ventails en feuilles, il peut provoquer des
+    bourrasques de plus de 100 km/h capables de balayer une maison."
+  frontSprite: {fileID: 21300000, guid: d7929d5756f5c0b439a41769e690e005, type: 3}
+  backSprite: {fileID: 21300000, guid: 6ea3dcc573588614aaea1ebae0c633d9, type: 3}
+  type1: 11
+  type2: 17
+  maxHp: 90
+  attack: 100
+  defense: 60
+  spAttack: 90
+  spDefense: 60
+  speed: 80
+  learnableMoves: []

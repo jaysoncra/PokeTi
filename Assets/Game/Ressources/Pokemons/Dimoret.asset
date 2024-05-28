@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7a2aaeacd6746e47a2ae4cecc6c6a86, type: 3}
+  m_Name: Dimoret
+  m_EditorClassIdentifier: 
+  name: Dimoret
+  description: "Ces Pok\xE9mon vivent dans les r\xE9gions froides. Ils chassent par
+    groupes de quatre ou cinq de fa\xE7on tr\xE8s organis\xE9e."
+  frontSprite: {fileID: 21300000, guid: c644f47a7d326b54abbc46a6d6d05b7c, type: 3}
+  backSprite: {fileID: 21300000, guid: b44300ce8528baa48a735f4490465b18, type: 3}
+  type1: 17
+  type2: 8
+  maxHp: 70
+  attack: 120
+  defense: 65
+  spAttack: 45
+  spDefense: 85
+  speed: 125
+  learnableMoves: []

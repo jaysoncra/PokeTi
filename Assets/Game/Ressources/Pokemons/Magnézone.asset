@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7a2aaeacd6746e47a2ae4cecc6c6a86, type: 3}
+  m_Name: "Magn\xE9zone"
+  m_EditorClassIdentifier: 
+  name: "Magn\xE9zone"
+  description: "C'est l'\xE9volution d'un Magn\xE9ton qui a \xE9t\xE9 expos\xE9 \xE0
+    un champ magn\xE9tique sp\xE9cial. Ses trois modules \xE9mettent du magn\xE9tisme."
+  frontSprite: {fileID: 21300000, guid: 6f52b514449c52946ab1290c1c3f087b, type: 3}
+  backSprite: {fileID: 21300000, guid: 351ff5d49ada85443959bc7816850d06, type: 3}
+  type1: 5
+  type2: 1
+  maxHp: 70
+  attack: 70
+  defense: 115
+  spAttack: 130
+  spDefense: 90
+  speed: 60
+  learnableMoves: []

@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7a2aaeacd6746e47a2ae4cecc6c6a86, type: 3}
+  m_Name: Papinox
+  m_EditorClassIdentifier: 
+  name: Papinox
+  description: "Attir\xE9 par les lumi\xE8res des villes, ce Pok\xE9mon nocturne
+    se nourrit de feuilles d'arbres urbains qu'il \xE9parpille au passage."
+  frontSprite: {fileID: 21300000, guid: 2c46291a76f25d84396d637d76e37fdd, type: 3}
+  backSprite: {fileID: 21300000, guid: b1c253c06bf94bf4fa42d65d74572206, type: 3}
+  type1: 9
+  type2: 12
+  maxHp: 60
+  attack: 50
+  defense: 70
+  spAttack: 50
+  spDefense: 90
+  speed: 65
+  learnableMoves: []

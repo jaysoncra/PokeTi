@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7a2aaeacd6746e47a2ae4cecc6c6a86, type: 3}
+  m_Name: Hypnomade
+  m_EditorClassIdentifier: 
+  name: Hypnomade
+  description: "Il peut endormir ses victimes en trois secondes en faisant osciller
+    son pendule devant leurs yeux, m\xEAme si elles viennent juste de se r\xE9veiller."
+  frontSprite: {fileID: 21300000, guid: 36076f5c9322d4148a22970b24c86283, type: 3}
+  backSprite: {fileID: 21300000, guid: 106d81bebaac06940a6906dc11051602, type: 3}
+  type1: 13
+  type2: 0
+  maxHp: 85
+  attack: 73
+  defense: 70
+  spAttack: 73
+  spDefense: 115
+  speed: 67
+  learnableMoves:
+  - moveBase: {fileID: 11400000, guid: 199a208466061dd45988904b9e56ff14, type: 2}
+    level: 0

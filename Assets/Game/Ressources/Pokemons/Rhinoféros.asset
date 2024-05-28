@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7a2aaeacd6746e47a2ae4cecc6c6a86, type: 3}
+  m_Name: "Rhinof\xE9ros"
+  m_EditorClassIdentifier: 
+  name: "Rhinof\xE9ros"
+  description: "Son cerveau a grossi depuis qu'il se tient sur ses pattes arri\xE8re.
+    Il creuse des tunnels en forant la pierre \xE0 l'aide de sa corne en forme de
+    perceuse."
+  frontSprite: {fileID: 21300000, guid: 2ebfc141645f15640b6ce78972c176c5, type: 3}
+  backSprite: {fileID: 21300000, guid: 85153d67da696e44c9e189da3481be92, type: 3}
+  type1: 15
+  type2: 14
+  maxHp: 0
+  attack: 0
+  defense: 0
+  spAttack: 0
+  spDefense: 0
+  speed: 0
+  learnableMoves: []

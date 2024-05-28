@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7a2aaeacd6746e47a2ae4cecc6c6a86, type: 3}
+  m_Name: Ursaring
+  m_EditorClassIdentifier: 
+  name: Ursaring
+  description: Il marque de ses griffes les arbres de son territoire qui portent
+    des Baies ou des fruits savoureux.
+  frontSprite: {fileID: 21300000, guid: 7015a77976801e149b9a00315cef70b2, type: 3}
+  backSprite: {fileID: 21300000, guid: 2e2266e8a7836fd47a5a3d0b8c90f0c5, type: 3}
+  type1: 10
+  type2: 0
+  maxHp: 90
+  attack: 130
+  defense: 75
+  spAttack: 75
+  spDefense: 75
+  speed: 55
+  learnableMoves: []

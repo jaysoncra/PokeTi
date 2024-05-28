@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7a2aaeacd6746e47a2ae4cecc6c6a86, type: 3}
+  m_Name: Drascore
+  m_EditorClassIdentifier: 
+  name: Drascore
+  description: "Il s\xE9cr\xE8te du poison par l'extr\xE9mit\xE9 de ses crochets.
+    Ceux de ses bras sont assez puissants pour r\xE9duire une voiture en pi\xE8ces."
+  frontSprite: {fileID: 21300000, guid: fa7a5ba3ae415ef49b804792e438cffe, type: 3}
+  backSprite: {fileID: 21300000, guid: 05519cf0f2fdb024c8843142d33ccdf3, type: 3}
+  type1: 12
+  type2: 17
+  maxHp: 70
+  attack: 90
+  defense: 110
+  spAttack: 60
+  spDefense: 75
+  speed: 95
+  learnableMoves: []

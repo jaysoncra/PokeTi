@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -26,11 +27,15 @@ public class Pokemon
 
     public List<Move> Moves {  get; set; }
     public Dictionary<Stat, int> Stats { get; private set; }
+    public Dictionary<Stat, int> StatBoosts { get; private set; }
+    public Condition Status { get; private set; }
+    public int StatusTime { get; set; }
+    public Queue<string> StatusChanges { get; private set; } = new Queue<string>();
+    public bool HpChanged { get; set; }
+    public event System.Action OnStatusChanged;
 
     public void Init()
     {
-        HP = MaxHp;
-
         //Permet de generer les attaques
         Moves = new List<Move>();
         foreach (var move in Base.LearnableMoves)
@@ -42,6 +47,10 @@ public class Pokemon
             if (Moves.Count >= 4)
                 break;
         }
+
+        CalculateStats();
+        HP = MaxHp;
+        ResetStatBoost();
     }
 
     //Permet de calculer les nouvelles stats en fonction du niveau des pokemon (Formule utilisé dans les jeux originaux)
@@ -54,16 +63,62 @@ public class Pokemon
         Stats.Add(Stat.SpDefense, Mathf.FloorToInt((Base.SpDefense * Level) / 100f) + 5);
         Stats.Add(Stat.Speed, Mathf.FloorToInt((Base.Speed * Level) / 100f) + 5);
 
-        //MaxHp = Mathf.FloorToInt((Base.MaxHp * Level) / 100f) + 10;
+        MaxHp = Mathf.FloorToInt((Base.MaxHp * Level) / 100f) + 10 + Level;
+    }
+
+    void ResetStatBoost()
+    {
+        StatBoosts = new Dictionary<Stat, int>()
+        {
+            {Stat.Attack, 0},
+            {Stat.Defense, 0},
+            {Stat.SpAttack, 0},
+            {Stat.SpDefense, 0},
+            {Stat.Speed, 0},
+        };
     }
 
     int GetStat(Stat stat)
     {
         int statVal = Stats[stat];
 
+        //Permet d'appliquer les boosts de stat
+        int boost = StatBoosts[stat];
+        var boostValues = new float[] { 1f, 1.5f, 2f, 2.5f, 3f, 3.5f, 4f };
 
+        if (boost >= 0)
+        {
+            statVal = Mathf.FloorToInt(statVal * boostValues[boost]);
+        }
+        else
+        {
+            statVal = Mathf.FloorToInt(statVal / boostValues[-boost]);
+
+        }
 
         return statVal;
+    }
+
+    public void ApplyBoosts(List<StatBoost> statBoosts)
+    {
+        foreach(var statBoost in statBoosts)
+        {
+            var stat = statBoost.stat;
+            var boost = statBoost.boost;
+
+            StatBoosts[stat] = Mathf.Clamp(StatBoosts[stat] + boost, -6, 6);
+
+            if (boost > 0)
+            {
+                StatusChanges.Enqueue($"La stat {stat} de {Base.Name} augmente!");
+            }
+            else
+            {
+                StatusChanges.Enqueue($"La stat {stat} de {Base.Name} diminue!");
+            }
+
+            Debug.Log($"{stat} has been boosted to {StatBoosts[stat]}");
+        }
     }
 
     public int Attack
@@ -86,16 +141,13 @@ public class Pokemon
     {
         get { return GetStat(Stat.Speed); }
     }
-    public int MaxHp
-    {
-        get { return Mathf.FloorToInt((Base.MaxHp * Level) / 100f) + 10; }
-    }
+    public int MaxHp { get; private set; }
 
-    //Combien de dégat l'attauqe utilisée fera
+    //Combien de dégat l'attaque utilisée fera
     public DamageDetails TakeDamage(Move move, Pokemon attacker)
     {
         float critical = 1f;
-        if (Random.value * 100f <= 6.25f)
+        if (UnityEngine.Random.value * 100f <= 6.25f)
             critical = 2f;
 
         float type = TypeChart.GetEffectiveness(move.Base.Type, this.Base.Type1) * TypeChart.GetEffectiveness(move.Base.Type, this.Base.Type2);
@@ -107,27 +159,64 @@ public class Pokemon
             Fainted = false
         };
 
-        float attack = (move.Base.IsSpecial) ? attacker.SpAttack : attacker.Attack;
-        float defense = (move.Base.IsSpecial) ? SpDefense : Defense;
+        float attack = (move.Base.Category == MoveCategory.Special) ? attacker.SpAttack : attacker.Attack;
+        float defense = (move.Base.Category == MoveCategory.Special) ? SpDefense : Defense;
 
-        float modifiers = Random.Range(0.85f, 1f) * type * critical;
+        float modifiers = UnityEngine.Random.Range(0.85f, 1f) * type * critical;
         float a = (2 * attacker.Level + 10) / 250f;
         float d = a * move.Base.Power * ((float)attack / defense) + 2;
         int damage = Mathf.FloorToInt(d * modifiers);
 
-        HP -= damage;
-        if (HP <= 0)
-        {
-            HP = 0;
-            damageDetails.Fainted = true;
-        }
+        UpdateHP(damage);
 
         return damageDetails;
     }
+
+    public void UpdateHP(int damage)
+    {
+        HP = Mathf.Clamp(HP - damage, 0, MaxHp);
+        HpChanged = true;
+    }
+
+    public void SetStatus(ConditionID conditionId)
+    {
+        if (Status != null) return;
+
+        Status = ConditionsDB.Conditions[conditionId];
+        Status?.OnStart?.Invoke(this);
+        StatusChanges.Enqueue($"{Base.Name} {Status.StartMessage}");
+        OnStatusChanged?.Invoke(); 
+    }
+
+    public void CureStatus()
+    {
+        Status = null;
+        OnStatusChanged?.Invoke();
+    }
+
     public Move GetRandomMove()
     {
-        int r = Random.Range(0, Moves.Count);
+        int r = UnityEngine.Random.Range(0, Moves.Count);
         return Moves[r];
+    }
+
+    public bool OnBeforeMove()
+    {
+        if(Status?.OnBeforeMove != null)
+        {
+            return Status.OnBeforeMove(this);
+        }
+        return true;
+    }
+
+    public void OnAfterTurn()
+    {
+        Status?.OnAfterTurn?.Invoke(this);
+    }
+
+    public void OnBattleOver()
+    {
+        ResetStatBoost();
     }
 }
 

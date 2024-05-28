@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7a2aaeacd6746e47a2ae4cecc6c6a86, type: 3}
+  m_Name: "Lib\xE9gon"
+  m_EditorClassIdentifier: 
+  name: "Lib\xE9gon"
+  description: "Il provoque des temp\xEAtes de sable en faisant battre ses puissantes
+    ailes. On l'appelle \xAB l'esprit du d\xE9sert \xBB."
+  frontSprite: {fileID: 21300000, guid: 7ae98f22a6818a742b268269fcd2cd8a, type: 3}
+  backSprite: {fileID: 21300000, guid: 18cd89c3b8f9bee4e961f09abe634690, type: 3}
+  type1: 15
+  type2: 3
+  maxHp: 80
+  attack: 100
+  defense: 80
+  spAttack: 80
+  spDefense: 80
+  speed: 100
+  learnableMoves: []

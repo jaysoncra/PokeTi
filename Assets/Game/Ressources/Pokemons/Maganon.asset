@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7a2aaeacd6746e47a2ae4cecc6c6a86, type: 3}
+  m_Name: Maganon
+  m_EditorClassIdentifier: 
+  name: Maganon
+  description: "Ce Pok\xE9mon projette des boules de feu \xE0 2000 \xB0C du bout
+    de ses bras. Il vit dans les crat\xE8res volcaniques."
+  frontSprite: {fileID: 21300000, guid: 8695ebbacc941474293f8ed134334098, type: 3}
+  backSprite: {fileID: 21300000, guid: b4bffedc25fef8f44ac4d32cc9d10067, type: 3}
+  type1: 7
+  type2: 0
+  maxHp: 75
+  attack: 95
+  defense: 67
+  spAttack: 125
+  spDefense: 95
+  speed: 83
+  learnableMoves: []
