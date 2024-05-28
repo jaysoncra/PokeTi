@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7a2aaeacd6746e47a2ae4cecc6c6a86, type: 3}
+  m_Name: Scarhino
+  m_EditorClassIdentifier: 
+  name: Scarhino
+  description: "Il arpente les for\xEAts en qu\xEAte de s\xE8ve, son mets favori.
+    Il poss\xE8de assez de force pour projeter ses ennemis dans les airs \xE0 l'aide
+    de sa corne."
+  frontSprite: {fileID: 21300000, guid: 5fa628acf086fe142ab0990c8dcf3950, type: 3}
+  backSprite: {fileID: 21300000, guid: b20e0dc38150c8044b9390973bbaf251, type: 3}
+  type1: 9
+  type2: 2
+  maxHp: 80
+  attack: 125
+  defense: 75
+  spAttack: 40
+  spDefense: 95
+  speed: 85
+  learnableMoves: []

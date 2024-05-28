@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7a2aaeacd6746e47a2ae4cecc6c6a86, type: 3}
+  m_Name: Bekipan
+  m_EditorClassIdentifier: 
+  name: Bekipan
+  description: Pour se nourrir, il trempe son grand bec dans la mer. Lorsqu'il le
+    ressort de l'eau, son bec est rempli de proies.
+  frontSprite: {fileID: 21300000, guid: db25799db4e3ec2408fc0a9eaaf28e71, type: 3}
+  backSprite: {fileID: 21300000, guid: effc9283fba8a354ea2ff2aeaefbcfb6, type: 3}
+  type1: 4
+  type2: 18
+  maxHp: 60
+  attack: 50
+  defense: 100
+  spAttack: 95
+  spDefense: 70
+  speed: 65
+  learnableMoves: []

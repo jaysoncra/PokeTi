@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7a2aaeacd6746e47a2ae4cecc6c6a86, type: 3}
+  m_Name: "\xC9lekable"
+  m_EditorClassIdentifier: 
+  name: "\xC9lekable"
+  description: "Il place les extr\xE9mit\xE9s de ses deux queues sur son ennemi avant
+    de lui envoyer une d\xE9charge de plus de 20 000 volts."
+  frontSprite: {fileID: 21300000, guid: 533f92d1ed975094f8db883881ecf75d, type: 3}
+  backSprite: {fileID: 21300000, guid: 667b1302f3a2fd341adc0b1bee3dfd9a, type: 3}
+  type1: 5
+  type2: 0
+  maxHp: 75
+  attack: 123
+  defense: 67
+  spAttack: 95
+  spDefense: 85
+  speed: 95
+  learnableMoves: []

@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7a2aaeacd6746e47a2ae4cecc6c6a86, type: 3}
+  m_Name: Dinoclier
+  m_EditorClassIdentifier: 
+  name: Dinoclier
+  description: "Ce Pok\xE9mon vivait dans la jungle il y a environ 100 millions d'ann\xE9es.
+    La peau de son visage est tr\xE8s dure."
+  frontSprite: {fileID: 21300000, guid: db082b74e3abfbf40ac896bf74a55ffe, type: 3}
+  backSprite: {fileID: 21300000, guid: f40517266e3c274498329ddcb9a6fa3e, type: 3}
+  type1: 14
+  type2: 1
+  maxHp: 30
+  attack: 42
+  defense: 118
+  spAttack: 42
+  spDefense: 88
+  speed: 30
+  learnableMoves: []

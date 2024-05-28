@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7a2aaeacd6746e47a2ae4cecc6c6a86, type: 3}
+  m_Name: Chapignon
+  m_EditorClassIdentifier: 
+  name: Chapignon
+  description: "Ses petits bras s'allongent comme des \xE9lastiques quand il donne
+    des coups de poing. Sa technique ferait p\xE2lir un boxeur professionnel."
+  frontSprite: {fileID: 21300000, guid: 0048d66a094dd6b46a10a742f4b3dc83, type: 3}
+  backSprite: {fileID: 21300000, guid: c2cf15b93106fbc4580ac8224dc7bc8b, type: 3}
+  type1: 11
+  type2: 2
+  maxHp: 60
+  attack: 130
+  defense: 80
+  spAttack: 60
+  spDefense: 60
+  speed: 70
+  learnableMoves: []

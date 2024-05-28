@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7a2aaeacd6746e47a2ae4cecc6c6a86, type: 3}
+  m_Name: Canarticho
+  m_EditorClassIdentifier: 
+  name: Canarticho
+  description: "Il ne peut pas vivre sans sa tige, c'est pourquoi il la prot\xE8ge
+    des ennemis au p\xE9ril de sa vie."
+  frontSprite: {fileID: 21300000, guid: 36b75c3a25b6a4b48b787f64f2bf52e9, type: 3}
+  backSprite: {fileID: 21300000, guid: 3b015259678deb842a3db88b8b0ce749, type: 3}
+  type1: 10
+  type2: 18
+  maxHp: 52
+  attack: 90
+  defense: 55
+  spAttack: 58
+  spDefense: 62
+  speed: 60
+  learnableMoves: []

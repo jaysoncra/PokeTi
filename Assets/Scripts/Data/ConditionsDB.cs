@@ -4,9 +4,15 @@ using UnityEngine;
 
 public class ConditionsDB
 {
-    static void PoisonEffect(Pokemon pokemon)
+    public static void Init()
     {
+        foreach(var kvp in Conditions)
+        {
+            var conditionId = kvp.Key;
+            var condition = kvp.Value;
 
+            condition.Id = conditionId;
+        }
     }
 
     public static Dictionary<ConditionID, Condition> Conditions { get; set; } = new Dictionary<ConditionID, Condition>()
@@ -51,6 +57,51 @@ public class ConditionsDB
                         return false;
                     }
                     return true;
+                }
+            }
+        },
+        {
+            ConditionID.gel,
+            new Condition()
+            {
+                Name = "Gel",
+                StartMessage = "est gelé !",
+                OnBeforeMove = (Pokemon pokemon) =>
+                {
+                    if(Random.Range(1, 5) == 1)
+                    {
+                        pokemon.CureStatus();
+                        pokemon.StatusChanges.Enqueue($"{pokemon.Base.Name} n'est plus gelé !");
+                        return true;
+                    }
+                    return false;
+                }
+            }
+        },
+        {
+            ConditionID.som,
+            new Condition()
+            {
+                Name = "Sommeil",
+                StartMessage = "est endormi !",
+                OnStart = (Pokemon pokemon) =>
+                {
+                    pokemon.StatusTime = Random.Range(1, 4);
+                    Debug.Log($"Will be asleep for {pokemon.StatusTime} move");
+                },
+                OnBeforeMove = (Pokemon pokemon) =>
+                {
+                    if (pokemon.StatusTime <= 0)
+                    {
+                        pokemon.CureStatus();
+                        pokemon.StatusChanges.Enqueue($"{pokemon.Base.Name} s'est réveillé !");
+                        return true;
+
+                    }
+
+                    pokemon.StatusTime--;
+                    pokemon.StatusChanges.Enqueue($"{pokemon.Base.Name} dort profondément !");
+                    return false;
                 }
             }
         }

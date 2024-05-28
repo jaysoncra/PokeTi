@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7a2aaeacd6746e47a2ae4cecc6c6a86, type: 3}
+  m_Name: Airmure
+  m_EditorClassIdentifier: 
+  name: Airmure
+  description: "Il vole \xE0 300 km/h et son corps est recouvert d'une armure dure
+    comme l'acier."
+  frontSprite: {fileID: 21300000, guid: 8a9ffd3e7d05e6b41b2969a550e443b6, type: 3}
+  backSprite: {fileID: 21300000, guid: 8d6ba007b15b650498e5b81a16223509, type: 3}
+  type1: 1
+  type2: 18
+  maxHp: 65
+  attack: 80
+  defense: 140
+  spAttack: 40
+  spDefense: 70
+  speed: 70
+  learnableMoves: []

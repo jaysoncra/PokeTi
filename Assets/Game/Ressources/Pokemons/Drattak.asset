@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7a2aaeacd6746e47a2ae4cecc6c6a86, type: 3}
+  m_Name: Drattak
+  m_EditorClassIdentifier: 
+  name: Drattak
+  description: "\xC0 force de r\xEAver de pouvoir voler, sa structure cellulaire
+    a \xE9volu\xE9 et il s'est vu pouss\xE9 des ailes."
+  frontSprite: {fileID: 21300000, guid: 7602db68439c398409d2012e26772861, type: 3}
+  backSprite: {fileID: 21300000, guid: 1bd6eaaf21964ef4285c5effc7cb3fb9, type: 3}
+  type1: 3
+  type2: 18
+  maxHp: 95
+  attack: 135
+  defense: 80
+  spAttack: 110
+  spDefense: 80
+  speed: 100
+  learnableMoves: []

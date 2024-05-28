@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7a2aaeacd6746e47a2ae4cecc6c6a86, type: 3}
+  m_Name: "Ins\xE9cateur"
+  m_EditorClassIdentifier: 
+  name: "Ins\xE9cateur"
+  description: "Il est quasiment impossible de parer ses coups lorsqu'il attaque
+    avec les faux de ses bras. Ses gestes ressemblent alors \xE0 ceux d'un ninja."
+  frontSprite: {fileID: 21300000, guid: 43004f36f38768b479961906fa45533b, type: 3}
+  backSprite: {fileID: 21300000, guid: 01cf26986cdba91478f2354737d28156, type: 3}
+  type1: 9
+  type2: 18
+  maxHp: 70
+  attack: 110
+  defense: 80
+  spAttack: 55
+  spDefense: 80
+  speed: 105
+  learnableMoves: []

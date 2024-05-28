@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7a2aaeacd6746e47a2ae4cecc6c6a86, type: 3}
+  m_Name: Ninjask
+  m_EditorClassIdentifier: 
+  name: Ninjask
+  description: "Les Pok\xE9mon de cette esp\xE8ce bougent si vite qu'ils en deviennent
+    invisibles. Ils se regroupent pr\xE8s de la s\xE8ve des arbres."
+  frontSprite: {fileID: 21300000, guid: 7bd034b58c521404db2445d47c83f69e, type: 3}
+  backSprite: {fileID: 21300000, guid: 062d8d09a250f7a4ebbbe6bd92f28649, type: 3}
+  type1: 9
+  type2: 18
+  maxHp: 61
+  attack: 90
+  defense: 45
+  spAttack: 50
+  spDefense: 50
+  speed: 160
+  learnableMoves: []

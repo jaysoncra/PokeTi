@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7a2aaeacd6746e47a2ae4cecc6c6a86, type: 3}
+  m_Name: Steelix
+  m_EditorClassIdentifier: 
+  name: Steelix
+  description: "Gr\xE2ce \xE0 la haute pression et \xE0 la temp\xE9rature \xE9lev\xE9e
+    des souterrains, son corps est devenu plus dur que le m\xE9tal."
+  frontSprite: {fileID: 0}
+  backSprite: {fileID: 0}
+  type1: 1
+  type2: 15
+  maxHp: 75
+  attack: 85
+  defense: 200
+  spAttack: 55
+  spDefense: 65
+  speed: 30
+  learnableMoves: []

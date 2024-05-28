@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7a2aaeacd6746e47a2ae4cecc6c6a86, type: 3}
+  m_Name: Blizzaroi
+  m_EditorClassIdentifier: 
+  name: Blizzaroi
+  description: "L'abominable homme des neiges, c'est lui. Il vit dans les montagnes
+    recouvertes de neiges \xE9ternelles, et d\xE9clenche des blizzards."
+  frontSprite: {fileID: 21300000, guid: b425cc98d86634b44b26dc1d93e3c261, type: 3}
+  backSprite: {fileID: 21300000, guid: ad80aee434cebd548bbac6dd28662392, type: 3}
+  type1: 11
+  type2: 8
+  maxHp: 90
+  attack: 92
+  defense: 75
+  spAttack: 92
+  spDefense: 85
+  speed: 60
+  learnableMoves:
+  - moveBase: {fileID: 11400000, guid: ebf9eae7d66735047a997a4e44cecfe9, type: 2}
+    level: 0
+  - moveBase: {fileID: 11400000, guid: 96822d1bf94442c4e90e59688364bae5, type: 2}
+    level: 34

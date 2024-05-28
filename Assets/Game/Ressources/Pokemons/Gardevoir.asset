@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7a2aaeacd6746e47a2ae4cecc6c6a86, type: 3}
+  m_Name: Gardevoir
+  m_EditorClassIdentifier: 
+  name: Gardevoir
+  description: "Ce Pok\xE9mon serait pr\xEAt \xE0 risquer sa vie pour prot\xE9ger
+    un Dresseur en qui il a confiance. Il a le pouvoir de pr\xE9dire l'avenir."
+  frontSprite: {fileID: 21300000, guid: 9e7c729f717b04147ba132447bdf7289, type: 3}
+  backSprite: {fileID: 21300000, guid: 80335674ab80d8e41839a1ffed1af4be, type: 3}
+  type1: 13
+  type2: 6
+  maxHp: 68
+  attack: 65
+  defense: 65
+  spAttack: 125
+  spDefense: 115
+  speed: 80
+  learnableMoves: []

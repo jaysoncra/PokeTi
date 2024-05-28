@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7a2aaeacd6746e47a2ae4cecc6c6a86, type: 3}
+  m_Name: "H\xE9l\xE9delle"
+  m_EditorClassIdentifier: 
+  name: "H\xE9l\xE9delle"
+  description: "Ce Pok\xE9mon d\xE9crit des cercles dans le ciel en qu\xEAte d'une
+    proie. D\xE8s qu'il en a rep\xE9r\xE9 une, il fond sur elle en piqu\xE9 pour
+    la capturer."
+  frontSprite: {fileID: 21300000, guid: ebcb5bb5d59ea2043a57fb6a03ddb88b, type: 3}
+  backSprite: {fileID: 21300000, guid: f4a9f4d52232b9942bae188c67238a10, type: 3}
+  type1: 10
+  type2: 18
+  maxHp: 60
+  attack: 85
+  defense: 60
+  spAttack: 75
+  spDefense: 50
+  speed: 125
+  learnableMoves: []

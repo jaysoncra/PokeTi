@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7a2aaeacd6746e47a2ae4cecc6c6a86, type: 3}
+  m_Name: Kaimorse
+  m_EditorClassIdentifier: 
+  name: Kaimorse
+  description: "Il brise de gros morceaux de glace \xE0 l'aide de ses d\xE9fenses.
+    Sa graisse \xE9paisse le prot\xE8ge \xE0 la fois du froid et des attaques ennemies."
+  frontSprite: {fileID: 21300000, guid: fc8d0182420d4a84b9a3a55d1e55d8dd, type: 3}
+  backSprite: {fileID: 21300000, guid: ce5200cf76f27ea4599cdb633b7bbfe9, type: 3}
+  type1: 8
+  type2: 4
+  maxHp: 110
+  attack: 80
+  defense: 90
+  spAttack: 95
+  spDefense: 90
+  speed: 65
+  learnableMoves: []
