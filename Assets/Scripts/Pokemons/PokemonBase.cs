@@ -136,11 +136,14 @@ public enum PokemonType
 
 public enum Stat
 {
-    Attack,
+    Attaque,
     Defense,
-    SpAttack,
-    SpDefense,
-    Speed
+    AttaqueSp,
+    DefenseSp,
+    Vitesse,
+
+    Précision,
+    Evasion
 }
 
 public class TypeChart

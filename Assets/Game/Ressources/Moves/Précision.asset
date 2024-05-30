@@ -10,22 +10,27 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8466cc1c96ae7244485ae56998b5ddf3, type: 3}
-  m_Name: Aboiement
+  m_Name: "Pr\xE9cision"
   m_EditorClassIdentifier: 
-  name: Aboiement
-  description: "Le lanceur hurle sur l'ennemi. Baisse l'Attaque Sp\xE9ciale de l'ennemi."
-  type: 17
-  power: 55
-  accuracy: 95
+  name: "Pr\xE9cision"
+  description: 
+  type: 1
+  power: 10
+  accuracy: 100
   alwaysHits: 0
-  pp: 15
+  pp: 20
   priority: 0
-  category: 1
+  category: 2
   effects:
     boosts:
-    - stat: 2
+    - stat: 5
       boost: -1
     status: 0
     volatileStatus: 0
-  secondaries: []
+  secondaries:
+  - boosts: []
+    status: 1
+    volatileStatus: 0
+    chance: 10
+    target: 0
   target: 0

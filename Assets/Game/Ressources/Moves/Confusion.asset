@@ -10,22 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8466cc1c96ae7244485ae56998b5ddf3, type: 3}
-  m_Name: Aboiement
+  m_Name: Confusion
   m_EditorClassIdentifier: 
-  name: Aboiement
-  description: "Le lanceur hurle sur l'ennemi. Baisse l'Attaque Sp\xE9ciale de l'ennemi."
-  type: 17
-  power: 55
-  accuracy: 95
-  alwaysHits: 0
-  pp: 15
-  priority: 0
-  category: 1
+  name: Confusion
+  description: rend confu
+  type: 10
+  power: 0
+  accuracy: 100
+  pp: 20
+  category: 2
   effects:
-    boosts:
-    - stat: 2
-      boost: -1
+    boosts: []
     status: 0
-    volatileStatus: 0
-  secondaries: []
+    volatileStatus: 6
   target: 0
