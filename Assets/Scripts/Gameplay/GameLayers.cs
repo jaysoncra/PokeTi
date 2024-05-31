@@ -7,6 +7,8 @@ public class GameLayers : MonoBehaviour
     [SerializeField] LayerMask solidObjectsLayer; //Variable qui represente le layer des objet solides
     [SerializeField] LayerMask interactableLayer; //Variable qui represente le layer des objet interactif
     [SerializeField] LayerMask grassLayer; //Variable qui represente le layer des hautes herbes
+    [SerializeField] LayerMask playerLayer; //Variable qui represente le layer du joueur
+    [SerializeField] LayerMask fovLayer; //Variable qui represente le layer du joueur
 
     public static GameLayers i { get; set; }
 
@@ -28,5 +30,15 @@ public class GameLayers : MonoBehaviour
     public LayerMask GrassLayer
     {
         get => grassLayer;
+    }
+
+    public LayerMask PlayerLayer
+    {
+        get => playerLayer;
+    }
+
+    public LayerMask FovLayer
+    {
+        get => fovLayer;
     }
 }
