@@ -12,12 +12,16 @@ public class BattleDialogBox : MonoBehaviour
     [SerializeField] GameObject actionSelector; //Fait reference au selecteur d'action
     [SerializeField] GameObject moveSelector; //Fait reference au selecteur d'attaque
     [SerializeField] GameObject moveDetails; //Fait reference aux infos des attaques
+    [SerializeField] GameObject choiceBox; //Fait réference à la boite de choix
 
     [SerializeField] List<Text> actionTexts; //Liste de toute les action réalisable en combat
     [SerializeField] List<Text> moveTexts; //Liste de toute les attaques apprise par le pokemon
 
     [SerializeField] Text ppText; //Fait reference au text du nombre de pp de l'attaque
     [SerializeField] Text typeText; //Fait reference au text du type de l'attaque
+
+    [SerializeField] Text yesText; //Fait reference au text oui
+    [SerializeField] Text noText; //Fait reference au text non
 
 
     public void SetDialog(string dialog)
@@ -54,6 +58,11 @@ public class BattleDialogBox : MonoBehaviour
         moveDetails.SetActive(enabled);
     }
 
+    public void EnableChoiceBox(bool enabled)
+    {
+        choiceBox.SetActive(enabled);
+    }
+
     public void UpdateActionSelection(int selectedAction)
     {
         for (int i = 0; i < actionTexts.Count; i++)
@@ -77,6 +86,15 @@ public class BattleDialogBox : MonoBehaviour
 
         ppText.text = $"PP {move.PP}/{move.Base.PP}";
         typeText.text = move.Base.Type.ToString();
+
+        if (move.PP == 0)
+        {
+            ppText.color = Color.red;
+        }
+        else
+        {
+            ppText.color = Color.black;
+        }
     }
 
     public void SetMoveNames(List<Move> moves)
@@ -87,6 +105,19 @@ public class BattleDialogBox : MonoBehaviour
                 moveTexts[i].text = moves[i].Base.Name;
             else
                 moveTexts[i].text = "-";
+        }
+    }
+    public void UpdateChoiceBox(bool yesSelected)
+    {
+        if (yesSelected)
+        {
+            yesText.color = highlightedColor;
+            noText.color = Color.black;
+        }
+        else
+        {
+            yesText.color = Color.black;
+            noText.color = highlightedColor;
         }
     }
 }

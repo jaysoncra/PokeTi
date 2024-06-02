@@ -17,5 +17,15 @@ MonoBehaviour:
   type: 17
   power: 55
   accuracy: 95
+  alwaysHits: 0
   pp: 15
-  isSpecial: 1
+  priority: 0
+  category: 1
+  effects:
+    boosts:
+    - stat: 2
+      boost: -1
+    status: 0
+    volatileStatus: 0
+  secondaries: []
+  target: 0

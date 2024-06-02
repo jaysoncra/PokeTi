@@ -16,11 +16,20 @@ MonoBehaviour:
   description: "Une violente temp\xEAte de neige s'abat sur l'ennemi. Peut aussi
     le geler."
   type: 8
-  power: 0
-  accuracy: 75
+  power: 110
+  accuracy: 70
+  alwaysHits: 0
   pp: 5
-  category: 2
+  priority: 0
+  category: 1
   effects:
     boosts: []
+    status: 0
+    volatileStatus: 0
+  secondaries:
+  - boosts: []
     status: 5
+    volatileStatus: 0
+    chance: 10
+    target: 0
   target: 0

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum GameState { FreeRoam, Battle } 
+public enum GameState { FreeRoam, Battle, Dialog, Cutscene } 
 
 public class GameController : MonoBehaviour
 {
@@ -12,8 +12,11 @@ public class GameController : MonoBehaviour
 
     GameState state;
 
+    public static GameController Instance { get; private set; }
+
     private void Awake()
     {
+        Instance = this;
         ConditionsDB.Init();
     }
 
@@ -21,6 +24,29 @@ public class GameController : MonoBehaviour
     {
         playerControler.OnEncountered += StartBattle;
         battleSystem.OnBattleOver += EndBattle;
+
+        playerControler.OnEnterTrainersView += (Collider2D trainerCollider) =>
+        {
+            var trainer = trainerCollider.GetComponentInParent<TrainerController>();
+            if (trainer != null)
+            {
+                state = GameState.Cutscene;
+                StartCoroutine(trainer.TriggerTrainerBattle(playerControler));
+            }
+        };
+
+        DialogManager.Instance.OnShowDialog += () =>
+        {
+            state = GameState.Dialog;
+        };
+
+        DialogManager.Instance.OnCloseDialog += () =>
+        {
+            if (state == GameState.Dialog)
+            {
+                state = GameState.FreeRoam;
+            }
+        };
     }
 
     void StartBattle()
@@ -35,8 +61,28 @@ public class GameController : MonoBehaviour
         battleSystem.StartBattle(playerParty, wildPokemon);
     }
 
+    TrainerController trainer;
+    public void StartTrainerBattle(TrainerController trainer)
+    {
+        state = GameState.Battle;
+        battleSystem.gameObject.SetActive(true);
+        worldCamera.gameObject.SetActive(false);
+
+        this.trainer = trainer;
+        var playerParty = playerControler.GetComponent<PokemonParty>();
+        var trainerParty = trainer.GetComponent<PokemonParty>();
+
+        battleSystem.StartTrainerBattle(playerParty, trainerParty);
+    }
+
     void EndBattle(bool won)
     {
+        if (trainer != null && won == true)
+        {
+            trainer.BattleLost();
+            trainer = null;
+        }
+
         state = GameState.FreeRoam;
         battleSystem.gameObject.SetActive(false);
         worldCamera.gameObject.SetActive(true);
@@ -51,6 +97,10 @@ public class GameController : MonoBehaviour
         else if (state == GameState.Battle)
         {
             battleSystem.HandleUpdate();
+        }
+        else if(state == GameState.Dialog)
+        {
+            DialogManager.Instance.HandleUpdate();
         }
     }
 }

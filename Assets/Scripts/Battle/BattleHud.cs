@@ -33,7 +33,7 @@ public class BattleHud : MonoBehaviour
             {ConditionID.bru, bruColor},
             {ConditionID.som, somColor},
             {ConditionID.par, parColor},
-            {ConditionID.gel, gelColor}
+            {ConditionID.gel, gelColor},
         };
 
         SetStatusText();

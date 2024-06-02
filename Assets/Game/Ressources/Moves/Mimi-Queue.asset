@@ -14,8 +14,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Mimi-Queue
   description: "Le lanceur remue son adorable queue pour tromper la vigilance de
-    l\u2019ennemi et baisser sa D\xE9fense."
+    l'ennemi et baisser sa D\xE9fense."
   type: 10
   power: 0
   accuracy: 100
+  alwaysHits: 0
   pp: 30
+  priority: 0
+  category: 2
+  effects:
+    boosts:
+    - stat: 1
+      boost: -1
+    status: 0
+    volatileStatus: 0
+  secondaries: []
+  target: 0

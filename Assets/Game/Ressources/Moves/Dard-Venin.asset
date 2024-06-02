@@ -13,9 +13,22 @@ MonoBehaviour:
   m_Name: Dard-Venin
   m_EditorClassIdentifier: 
   name: Dard-Venin
-  description: "Un dard toxique qui transperce l\u2019ennemi. Peut aussi l\u2019empoisonner."
+  description: Un dard toxique qui transperce l'ennemi. Peut aussi l'empoisonner.
   type: 12
   power: 15
   accuracy: 100
+  alwaysHits: 0
   pp: 35
-  isSpecial: 0
+  priority: 0
+  category: 0
+  effects:
+    boosts: []
+    status: 0
+    volatileStatus: 0
+  secondaries:
+  - boosts: []
+    status: 1
+    volatileStatus: 0
+    chance: 30
+    target: 0
+  target: 0

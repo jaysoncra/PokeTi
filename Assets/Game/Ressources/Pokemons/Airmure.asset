@@ -25,4 +25,12 @@ MonoBehaviour:
   spAttack: 40
   spDefense: 70
   speed: 70
-  learnableMoves: []
+  learnableMoves:
+  - moveBase: {fileID: 11400000, guid: 0241d885cba8d184ebbbaa7f36965894, type: 2}
+    level: 32
+  - moveBase: {fileID: 11400000, guid: 53824c466f697b342954cd76cf7077b4, type: 2}
+    level: 36
+  - moveBase: {fileID: 11400000, guid: cf6bd71bb55f1c4449f6d5ec1fa38fb2, type: 2}
+    level: 40
+  - moveBase: {fileID: 11400000, guid: de918efef4fa8da4d914b6875f180814, type: 2}
+    level: 48

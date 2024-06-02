@@ -12,14 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8466cc1c96ae7244485ae56998b5ddf3, type: 3}
   m_Name: "Cage \xC9clair"
   m_EditorClassIdentifier: 
-  name: "Cage \xC9claire"
-  description: "Un faible choc \xE9lectrique paralyse la cible."
+  name: "Cage \xC9clair"
+  description: "Un faible choc \xE9lectrique frappe l'ennemi. Si l'attaque le touche,
+    celui-ci est paralys\xE9."
   type: 5
   power: 0
   accuracy: 90
+  alwaysHits: 0
   pp: 20
+  priority: 0
   category: 2
   effects:
     boosts: []
     status: 4
+    volatileStatus: 0
+  secondaries: []
   target: 0
