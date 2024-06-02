@@ -23661,17 +23661,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pokemons:
   - _base: {fileID: 11400000, guid: 5dd98b4fe32afe64ca1fa3ce88ba1683, type: 2}
-    level: 35
-  - _base: {fileID: 11400000, guid: 56b2a1be6c3da5d468175c99e114a440, type: 2}
-    level: 35
-  - _base: {fileID: 11400000, guid: 8bdb3e3f8132c0d42819b4f2894b67ea, type: 2}
-    level: 35
-  - _base: {fileID: 11400000, guid: cdbdbfc36c446694991c1e5b9285a8f6, type: 2}
-    level: 35
-  - _base: {fileID: 11400000, guid: ab80e112e6b93d44a861992e77578c75, type: 2}
-    level: 35
+    level: 60
+  - _base: {fileID: 11400000, guid: 621126e296e7fa44f93e84ebed69937b, type: 2}
+    level: 60
   - _base: {fileID: 11400000, guid: eda516624d477d2418edb2ddb79b4e57, type: 2}
-    level: 35
+    level: 60
+  - _base: {fileID: 11400000, guid: d6919dc40e5812f408573d76e9ced05e, type: 2}
+    level: 60
+  - _base: {fileID: 11400000, guid: b9e120fec3aa880408635eb23fbd2e7f, type: 2}
+    level: 60
+  - _base: {fileID: 11400000, guid: ee2d47af6d32cb542a0375b9a4086739, type: 2}
+    level: 60
 --- !u!114 &1429809612
 MonoBehaviour:
   m_ObjectHideFlags: 0
