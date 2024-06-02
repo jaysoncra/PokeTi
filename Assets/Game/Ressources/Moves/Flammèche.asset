@@ -13,14 +13,22 @@ MonoBehaviour:
   m_Name: "Flamm\xE8che"
   m_EditorClassIdentifier: 
   name: "Flamm\xE8che"
-  description: "L\u2019ennemi est attaqu\xE9 par de faibles flammes. Peut aussi le
-    br\xFBler."
+  description: "L'ennemi est attaqu\xE9 par une faible flamme. Peut aussi le br\xFBler."
   type: 7
   power: 40
   accuracy: 100
+  alwaysHits: 0
   pp: 25
-  category: 2
+  priority: 0
+  category: 1
   effects:
     boosts: []
+    status: 0
+    volatileStatus: 0
+  secondaries:
+  - boosts: []
     status: 2
+    volatileStatus: 0
+    chance: 10
+    target: 0
   target: 0

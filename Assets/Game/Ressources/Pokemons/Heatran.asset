@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7a2aaeacd6746e47a2ae4cecc6c6a86, type: 3}
+  m_Name: Heatran
+  m_EditorClassIdentifier: 
+  name: Heatran
+  description: "Ce Pok\xE9mon vit dans les grottes volcaniques. Il rampe sur les
+    murs et au plafond en y plantant ses griffes dispos\xE9es en croix."
+  frontSprite: {fileID: 21300000, guid: bdef09e4784a61746a1ff9d462ab3b3a, type: 3}
+  backSprite: {fileID: 21300000, guid: 4d87545240c959c4eb72c50b5fb69510, type: 3}
+  type1: 7
+  type2: 1
+  maxHp: 91
+  attack: 90
+  defense: 106
+  spAttack: 130
+  spDefense: 106
+  speed: 77
+  learnableMoves:
+  - moveBase: {fileID: 11400000, guid: 16acbb4c8cf4fa248bb9e367e6140401, type: 2}
+    level: 0
+  - moveBase: {fileID: 11400000, guid: cf6bd71bb55f1c4449f6d5ec1fa38fb2, type: 2}
+    level: 0
+  - moveBase: {fileID: 11400000, guid: 5401caf5c8b1b1940bc2b15c3278b443, type: 2}
+    level: 0
+  - moveBase: {fileID: 11400000, guid: 4ff6792ff030dc34aa514c454d55e0de, type: 2}
+    level: 0

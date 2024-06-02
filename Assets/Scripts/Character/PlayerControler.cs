@@ -6,6 +6,9 @@ using UnityEngine;
 
 public class PlayerControler : MonoBehaviour
 {
+    [SerializeField] string name;
+    [SerializeField] Sprite sprite;
+
     public event Action OnEncountered; //Rencontre avec un pokemon
     public event Action<Collider2D> OnEnterTrainersView; //Rencontre avec un dresseur
 
@@ -35,7 +38,7 @@ public class PlayerControler : MonoBehaviour
 
         character.HandleUpdate();
 
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.Q))
         {
             Interact();
         }
@@ -80,7 +83,18 @@ public class PlayerControler : MonoBehaviour
         var collider = Physics2D.OverlapCircle(transform.position, 0.2f, GameLayers.i.FovLayer);
         if (collider != null)
         {
+            character.Animator.IsMoving = false;
             OnEnterTrainersView?.Invoke(collider);
         }
+    }
+
+    public string Name
+    {
+        get => name;
+    }
+
+    public Sprite Sprite
+    {
+        get => sprite;
     }
 }

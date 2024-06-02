@@ -13,9 +13,20 @@ MonoBehaviour:
   m_Name: Brouillard
   m_EditorClassIdentifier: 
   name: Brouillard
-  description: "Le lanceur disperse un nuage d\u2019encre ou de fum\xE9e. R\xE9duit
-    la Pr\xE9cision de l\u2019ennemi."
+  description: "Le lanceur disperse un nuage d'encre ou de fum\xE9e. R\xE9duit la
+    Pr\xE9cision de l'ennemi."
   type: 10
   power: 0
   accuracy: 100
+  alwaysHits: 0
   pp: 20
+  priority: 0
+  category: 2
+  effects:
+    boosts:
+    - stat: 5
+      boost: -1
+    status: 0
+    volatileStatus: 0
+  secondaries: []
+  target: 0

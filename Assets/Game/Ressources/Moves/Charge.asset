@@ -13,8 +13,17 @@ MonoBehaviour:
   m_Name: Charge
   m_EditorClassIdentifier: 
   name: Charge
-  description: "Le lanceur charge l\u2019ennemi et le percute de tout son corps."
+  description: Le lanceur charge l'ennemi et le percute de tout son poids.
   type: 10
-  power: 50
+  power: 40
   accuracy: 100
+  alwaysHits: 0
   pp: 35
+  priority: 0
+  category: 0
+  effects:
+    boosts: []
+    status: 0
+    volatileStatus: 0
+  secondaries: []
+  target: 0

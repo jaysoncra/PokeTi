@@ -13,8 +13,17 @@ MonoBehaviour:
   m_Name: Poudre Dodo
   m_EditorClassIdentifier: 
   name: Poudre Dodo
-  description: "Le lanceur r\xE9pand une poudre soporifique qui endort la cible."
+  description: 
   type: 11
   power: 0
   accuracy: 75
+  alwaysHits: 0
   pp: 15
+  priority: 0
+  category: 2
+  effects:
+    boosts: []
+    status: 3
+    volatileStatus: 0
+  secondaries: []
+  target: 0

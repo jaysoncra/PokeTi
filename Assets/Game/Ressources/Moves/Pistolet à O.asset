@@ -13,9 +13,17 @@ MonoBehaviour:
   m_Name: "Pistolet \xE0 O"
   m_EditorClassIdentifier: 
   name: "Pistolet \xE0 O"
-  description: "De l'eau est projet\xE9e avec force sur l'ennemi."
+  description: 
   type: 4
   power: 40
   accuracy: 100
+  alwaysHits: 0
   pp: 25
-  isSpecial: 1
+  priority: 0
+  category: 1
+  effects:
+    boosts: []
+    status: 0
+    volatileStatus: 0
+  secondaries: []
+  target: 0
